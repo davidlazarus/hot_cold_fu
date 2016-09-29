@@ -172,8 +172,8 @@ h1 {
 	background-color: #394264;
 	width: 380px;
 	height: 380px;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
+	/*-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;*/
 	border-radius: 4px;
 	margin: 0 auto;
 
