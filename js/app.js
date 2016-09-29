@@ -52,7 +52,7 @@ function game() {
 
         	if (guess === target) {
             $('h2#feedback').html('Congrats! You got it in ' + numberOfGuesses + ' attempts! The number was ' + target);
-            /*$('.button').css({rgba: 0 0 0 0});*/
+            $('.button').css({rgba: 0 0 0 0});
         	}
 
         	else if (guess < 1 || 100 < guess){
