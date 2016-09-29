@@ -40,7 +40,6 @@ function game() {
 		var currentGuess = guesses[i-1];
 		currentGuess = parseInt(currentGuess);
 		var previousGuess = guesses[i-2];
-
 		previousGuess = parseInt(previousGuess);
         previousDistance = target - previousGuess;
         console.log("this is the guesses array" + guesses + "this is the current guess" + currentGuess + "this is the previous guess" + previousGuess);
@@ -60,7 +59,7 @@ function game() {
 
          	else {
             console.log("guess, target, previousDistance, distance" + guess, target, previousDistance, distance);
-            if (previousGuess == NaN) {
+            if (numberOfGuesses === 1) {
                 if (guess > target) {
                     $('h2#feedback').html('Guess lower! Last guess: ' + guess);
                 } else if (guess < target) {
@@ -100,7 +99,7 @@ function game() {
   }
 
 function myPush(array, val) {
-  	array.push(val);
+  	array.push(val + ',');
   	return array;
   }
 
