@@ -47,6 +47,7 @@ function game() {
         console.log("this is the pewvious distance" + previousDistance);
         $('.guessBox').html(guesses);
         $('#count').html(numberOfGuesses);
+        $('h2#feedback').css({color: 'white'});
 
 
         	if (guess === target) {
